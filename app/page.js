@@ -34,18 +34,27 @@ export default function Home() {
         <div style={{ width: '2rem' }}></div>
       </header>
       
-      <section id="about" className={styles.content}>
-        <h2>About Me</h2>
-        <p>This is the about me section. You can add your skills and other information here.</p>
+      <section id="about" className={styles.section}>
+        <div className={styles.aboutContainer}>
+          <div className={`${styles.aboutCorner} ${styles.tl}`}></div>
+          <div className={`${styles.aboutCorner} ${styles.tr}`}></div>
+          <div className={`${styles.aboutCorner} ${styles.bl}`}></div>
+          <div className={`${styles.aboutCorner} ${styles.br}`}></div>
+          <div className={`${styles.aboutLatch} ${styles.latch1}`}></div>
+          <div className={`${styles.aboutLatch} ${styles.latch2}`}></div>
+          <h2>About me section</h2>
+        </div>
       </section>
 
       <section id="projects" className={styles.section}>
         <h2>Projects</h2>
         <div className={styles.projectsGrid}>
-          <VinylCard title="Project One" description="A short description of the first project." />
-          <VinylCard title="Project Two" description="A short description of the second project." />
-          <VinylCard title="Project Three" description="A short description of the third project." />
-          <VinylCard title="Project Four" description="A short description of the fourth project." />
+          <VinylCard title="Project One" description="Description" />
+          <VinylCard title="Project Two" description="Description" />
+          <VinylCard title="Project Three" description="Description" />
+          <VinylCard title="Project Four" description="Description" />
+          <VinylCard title="Project Five" description="Description" />
+          <VinylCard title="Project Six" description="Description" />
         </div>
       </section>
       
