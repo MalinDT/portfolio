@@ -1,10 +1,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 2rem;
 }
 
 .header {
@@ -60,30 +58,25 @@
 
 .content {
   margin-top: 80px; /* To account for fixed header */
-  margin-bottom: 80px; /* To account for fixed footer */
   width: 100%;
   max-width: 900px;
-  height: 500px;
+  height: calc(100vh - 80px); /* Full viewport height minus header */
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   padding: 2rem;
-}
-
-.footer {
-  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
-  gap: 1rem;
 }
 
-.button {
-  background-color: #b0c4b1;
-  color: #2d3a3a;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1rem;
+.section {
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
