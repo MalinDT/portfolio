@@ -37,7 +37,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #2d3a3a;
+  background-color: #374d4d;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -58,10 +58,10 @@
 }
 
 .content {
-  margin-top: 80px; /* To account for fixed header */
+  margin-top: 80px;
   width: 100%;
   max-width: 900px;
-  height: calc(100vh - 80px); /* Full viewport height minus header */
+  height: calc(100vh - 80px);
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   padding: 2rem;
@@ -102,7 +102,7 @@
   width: 100%;
   max-width: 800px;
   height: 400px;
-  background-color: #3a3a3a;
+  background-color: #253533;
   border-radius: 40px;
   display: flex;
   justify-content: center;
@@ -115,7 +115,7 @@
   position: absolute;
   width: 80px;
   height: 80px;
-  background-color: #5a5a5a;
+  background-color: #4b6966;
 }
 .tl { top: 0; left: 0; border-radius: 40px 0 0 0; }
 .tr { top: 0; right: 0; border-radius: 0 40px 0 0; }
@@ -127,7 +127,7 @@
   top: -20px;
   width: 80px;
   height: 40px;
-  background-color: #5a5a5a;
+  background-color: #4b6966;
   border-radius: 5px;
 }
 .latch1 { left: 150px; }

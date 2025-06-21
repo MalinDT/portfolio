@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from "./page.module.css";
 import VinylCard from './components/VinylCard';
+import ContactCard from './components/ContactCard';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,6 @@ export default function Home() {
             </nav>
           )}
         </div>
-        <div className={styles.logo}>*Name/logo*</div>
         <div style={{ width: '2rem' }}></div>
       </header>
       
@@ -59,8 +59,7 @@ export default function Home() {
       </section>
       
       <section id="contact" className={styles.section}>
-        <h2>Contact Me</h2>
-        <p>You can add your contact information or a contact form here.</p>
+        <ContactCard />
       </section>
     </main>
   );
