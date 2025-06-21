@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from "./page.module.css";
+import VinylCard from './components/VinylCard';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,12 @@ export default function Home() {
 
       <section id="projects" className={styles.section}>
         <h2>Projects</h2>
-        <p>This is where your projects will be listed.</p>
+        <div className={styles.projectsGrid}>
+          <VinylCard title="Project One" description="A short description of the first project." />
+          <VinylCard title="Project Two" description="A short description of the second project." />
+          <VinylCard title="Project Three" description="A short description of the third project." />
+          <VinylCard title="Project Four" description="A short description of the fourth project." />
+        </div>
       </section>
       
       <section id="contact" className={styles.section}>
